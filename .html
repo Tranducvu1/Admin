@@ -3,27 +3,26 @@
 	<head>
 		<!-- Basic Page Info -->
 		<meta charset="utf-8" />
-		<title>DORA</title>
+		<title>Dora</title>
 
 		<!-- Site favicon -->
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
-			href="vendors/images/logo.png"
+			href="vendors/images/apple-touch-icon.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="vendors/images/logo.png"
+			href="vendors/images/favicon-32x32.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="16x16"
-			href="vendors/images/logo.png"
+			href="vendors/images/favicon-16x16.png"
 		/>
-
 
 		<!-- Mobile Specific Metas -->
 		<meta
@@ -261,7 +260,7 @@
 							<span class="user-icon">
 								<img src="vendors/images/photo1.jpg" alt="" />
 							</span>
-							<span class="user-name">Nguyên Thị Tài Linh</span>
+							<span class="user-name">Ross C. Lopez</span>
 						</a>
 						<div
 							class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
@@ -462,8 +461,12 @@
 		<div class="left-side-bar">
 			<div class="brand-logo">
 				<a href="index.html">
-					
-					<img src="vendors/images/logo.png" alt="" />
+					<img src="vendors/images/logo.png" alt="" class="dark-logo" />
+					<img
+						src="vendors/images/deskapp-logo-white.svg"
+						alt=""
+						class="light-logo"
+					/>
 				</a>
 				<div class="close-sidebar" data-toggle="left-sidebar-close">
 					<i class="ion-close-round"></i>
@@ -480,138 +483,111 @@
 							
 						</li>
 						<li class="dropdown">
-							<a class="dropdown-toggle" data-bs-toggle="collapse" href="#catMenu" aria-expanded="false">
-							  <span class="micon bi bi-textarea-resize"></span>
-							  <span class="mtext">Mèo</span>
+							<a href="./information.html" class="dropdown-toggle">
+								<span class="micon bi bi-textarea-resize"></span
+								><span class="mtext">Thức ăn cho mèo</span>
 							</a>
-							<ul id="catMenu" class="collapse list-unstyled">
-							  <li><a href="./cat.html">Mèo</a></li>
-							  <li><a href="./foodcat.html">Thức ăn cho mèo</a></li>
-							  <li><a href="./vesinhmeo.html">Vệ sinh cho mèo</a></li>
-							  <li><a href="./clothescat.html">Áo quần cho mèo</a></li>
-							</ul>
-						  </li>
-						  <li class="dropdown">
-							<a class="dropdown-toggle" data-bs-toggle="collapse" href="#dogMenu" aria-expanded="false">
-							  <span class="micon bi bi-textarea-resize"></span>
-							  <span class="mtext">Chó</span>
-							</a>
-							<ul id="dogMenu" class="collapse list-unstyled">
-							  <li><a href="./dog.html">Chó</a></li>
-							  <li><a href="./fooddog.html">Thức ăn cho chó</a></li>
-							</ul>
-						  </li>
-						  
-				</ul>
-			</div>
-		</div>
-	</div>
-		<div class="mobile-menu-overlay"></div>
-
-		<div class="main-container">
-			<div class="pd-ltr-20 xs-pd-20-10">
-				<div class="min-height-200px">
-					<div class="page-header">
-						<div class="row">
-							<div class="col-md-6 col-sm-12">
-								<div class="title">
-									<h4>Thêm</h4>
-								</div>
-								<nav aria-label="breadcrumb" role="navigation">
-									<ol class="breadcrumb">
-										<li class="breadcrumb-item">
-											<a href="index.html">Home</a>
-										</li>
-										<li class="breadcrumb-item active" aria-current="page">
-											Thêm
-										</li>
-									</ol>
-								</nav>
-							</div>
-							<div class="col-md-6 col-sm-12 text-right">
-								<div class="dropdown">
-									<a
-										class="btn btn-secondary dropdown-toggle"
-										href="#"
-										role="button"
-										data-toggle="dropdown"
-									>
-										October 2024
-									</a>
-									<div class="dropdown-menu dropdown-menu-right">
-										<a class="dropdown-item" href="#">Export List</a>
-										<a class="dropdown-item" href="#">Policies</a>
-										<a class="dropdown-item" href="#">View Assets</a>
-									</div>
-								</div>
+							
+						</li>
+						
+						
 							</div>
 						</div>
 					</div>
-					<!-- Default Basic Forms Start -->
+					<!-- basic table  Start -->
 					<div class="pd-20 card-box mb-30">
-						<div class="clearfix">
+						<div class="clearfix mb-20">
 							<div class="pull-left">
-								<h4 class="text-blue h4">Thêm </h4>
-								
+								<h4 class="text-blue h4">Thức ăn cho mèo</h4>
+							
+							</div>
+							<div class="pull-right">
+								<a
+									href=""
+									><i class="fa fa-code"></i> Source Code</a
+								>
 							</div>
 						</div>
-						<form id="dataForm">
-							<div class="form-group row">
-								<label class="col-sm-12 col-md-2 col-form-label">Tên</label>
-								<div class="col-sm-12 col-md-10">
-									<input
-										id="name"
-										class="form-control"
-										type="text"
-										placeholder="Nhập tên"
-									/>
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">STT</th>
+									<th scope="col">Tên</th>
+									<th scope="col">Số tiền</th>							
+                                    <th scope="col">Hình ảnh</th>
+									<th scope="col">Status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Thức ăn hạt cho Mèo Nutri Plan 5kg - Hàn Quốc cho mọi lứa tuổi</td>
+									<td>$29.00</td>
+									</td>
+                                <td><img src="./vendors/images/foodcat/anh2.jpg" alt="" /></td>
+									<td><span class="badge badge-success">Đã có</span></td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Me-O Adult 350g Vị Hải sản Cá Ngừ Cá thu Hạt cho mèo trưởng thành
+									</td>
+									<td>$20.00</td>
+                                                      <td><img src="./vendors/images/foodcat/anh3.jpg" alt="" /></td>
+									<td><span class="badge badge-secondary">Đã có</span></td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Hạt cho Mèo Lớn Whiskas Xá 20kg - Vị Cá Biển</td>
+									<td>$15.00</td>									
+                                    <td><img src="./vendors/images/foodcat/anh4.jpg" alt="" /></td>
+									<td><span class="badge badge-success">Đã có</span></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="collapse collapse-box" id="basic-table">
+							<div class="code-box">
+								<div class="clearfix">
+									<a
+										href="javascript:;"
+										class="btn btn-primary btn-sm code-copy pull-left"
+										data-clipboard-target="#basic-table-code"
+										><i class="fa fa-clipboard"></i> Copy Code</a
+									>
+									<a
+										href="#basic-table"
+										class="btn btn-primary btn-sm pull-right"
+										rel="content-y"
+										data-toggle="collapse"
+										role="button"
+										><i class="fa fa-eye-slash"></i> Hide Code</a
+									>
 								</div>
+								<pre><code class="xml copy-pre" id="basic-table-code">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+    </tr>
+  </tbody>
+</table>
+							</code></pre>
 							</div>
-							<div class="form-group row">
-								<label class="col-sm-12 col-md-2 col-form-label">Giới tính</label>
-								<div class="col-sm-12 col-md-10">
-									<input
-										id="gender"
-										class="form-control"
-										type="text"
-										placeholder="Nhập thông tin"
-									/>
-								</div>
-							</div>
-							<div class="form-group row">
-								<label class="col-sm-12 col-md-2 col-form-label">Số tiền</label>
-								<div class="col-sm-12 col-md-10">
-									<input
-										id="amount"
-										class="form-control"
-										type="number"
-										placeholder="Nhập số tiền"
-									/>
-								</div>
-							</div>
-							<div class="form-group row">
-								<label class="col-sm-12 col-md-2 col-form-label">Thêm ảnh</label>
-								<div class="col-sm-12 col-md-10">
-									<input
-										id="image"
-										type="file"
-										class="form-control"
-									/>
-								</div>
-							</div>
-							<button type="button" id="saveButton" class="btn btn-primary">
-								Lưu Dữ Liệu
-							</button>
-						</form>
-						
-					
-						
+						</div>
 					</div>
-				
-
+					
 					
 				</div>
-				
+				<div class="footer-wrap pd-20 mb-20 card-box">
+					DeskApp 
+					<a href="https://github.com/dropways" target="_blank"
+						>Nguyễn Phạm Hoàng Cầm</a
+					>
+				</div>
 			</div>
 		</div>
 		<!-- welcome modal start -->
@@ -625,7 +601,7 @@
 			></iframe>
 			<div class="text-center">
 				<h3 class="h5 weight-500 text-center mb-2">
-					Open source
+					Add Restaurant
 					<span role="img" aria-label="gratitude">❤️</span>
 				</h3>
 				<div class="pb-2">
@@ -669,7 +645,14 @@
 					src="https://buttons.github.io/buttons.js"
 				></script>
 			</div>
-			
+			<a
+				href="./Add.html"
+				target="_blank"
+				class="btn btn-success btn-sm mb-0 mb-md-3 w-100"
+			>
+				Thêm phòng
+				<i class="fa fa-download"></i>
+			</a>
 			<p class="font-14 text-center mb-1 d-none d-md-block">
 				Available in the following technologies:
 			</p>
@@ -677,47 +660,9 @@
 				<i class="fa fa-html5"></i>
 			</div>
 		</div>
-		<script>
-		document.getElementById('saveButton').addEventListener('click', () => {
-    // Lấy giá trị từ form
-    const name = document.getElementById('name').value;
-    const gender = document.getElementById('gender').value;
-    const amount = document.getElementById('amount').value;
-    const imageInput = document.getElementById('image');
-    let imageUrl = '';
-
-    // Xử lý file (nếu có)
-    if (imageInput.files.length > 0) {
-        const reader = new FileReader();
-        reader.onload = function (e) {
-            imageUrl = e.target.result;
-
-            // Lấy dữ liệu hiện tại từ localStorage (nếu có)
-            let formDataArray = JSON.parse(localStorage.getItem('formDataArray')) || [];
-            
-            // Tạo đối tượng mới và thêm vào mảng
-            const formData = { name, gender, amount, image: imageUrl };
-            formDataArray.push(formData);
-            
-            // Lưu lại mảng vào localStorage
-            localStorage.setItem('formDataArray', JSON.stringify(formDataArray));
-            alert('Dữ liệu đã được lưu!');
-            window.location.href = './cat.html';
-        };
-        reader.readAsDataURL(imageInput.files[0]);
-    } else {
-        // Nếu không có ảnh
-        const formDataArray = JSON.parse(localStorage.getItem('formDataArray')) || [];
-        const formData = { name, gender, amount, image: '' };
-        formDataArray.push(formData);
-        localStorage.setItem('formDataArray', JSON.stringify(formDataArray));
-        alert('Dữ liệu đã được lưu!');
-        window.location.href = './cat.html';
-    }
-});
-
-		</script>
-		
+		<button class="welcome-modal-btn">
+			<i class="fa fa-download"></i> Thêm phòng
+		</button>
 		<!-- welcome modal end -->
 		<!-- js -->
 		<script src="vendors/scripts/core.js"></script>

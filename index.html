@@ -3,7 +3,7 @@
 	<head>
 		<!-- Basic Page Info -->
 		<meta charset="utf-8" />
-		<title>LECAMÉLIA</title>
+		<title>DORA</title>
 
 		<!-- Site favicon -->
 		<link
@@ -37,6 +37,11 @@
 		/>
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="vendors/styles/core.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="src/styles/media.css"
+		/>
 		<link
 			rel="stylesheet"
 			type="text/css"
@@ -484,34 +489,50 @@
 			</div>
 			<div class="menu-block customscroll">
 				<div class="sidebar-menu">
-					<ul id="accordion-menu">
-						<li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle">
-								<span class="micon bi bi-house"></span
-								><span class="mtext">Home</span>
-							</a>
-							
-						</li>
-						<li class="dropdown">
-							<a href="./information.html" class="dropdown-toggle">
-								<span class="micon bi bi-textarea-resize"></span
-								><span class="mtext">Thông tin</span>
-							</a>
-							
-						</li>
-						
-						
-							</div>
-						</div>
-					</div>
-			</div>
-		</div>
+				  <ul id="accordion-menu">
+					<!-- Home -->
+					<li class="dropdown">
+					  <a href="./index.html" class="dropdown-toggle active">
+						<span class="micon bi bi-house"></span>
+						<span class="mtext">Home</span>
+					  </a>
+					</li>
+			  
+					<!-- Mèo -->
+					<li class="dropdown">
+					  <a class="dropdown-toggle" data-bs-toggle="collapse" href="#catMenu" aria-expanded="false">
+						<span class="micon bi bi-textarea-resize"></span>
+						<span class="mtext">Mèo</span>
+					  </a>
+					  <ul id="catMenu" class="collapse list-unstyled">
+						<li><a href="./cat.html">Mèo</a></li>
+						<li><a href="./foodcat.html">Thức ăn cho mèo</a></li>
+						<li><a href="./vesinhmeo.html">Vệ sinh cho mèo</a></li>
+						<li><a href="./clothescat.html">Áo quần cho mèo</a></li>
+					  </ul>
+					</li>
+			  
+					<!-- Chó -->
+					<li class="dropdown">
+					  <a class="dropdown-toggle" data-bs-toggle="collapse" href="#dogMenu" aria-expanded="false">
+						<span class="micon bi bi-textarea-resize"></span>
+						<span class="mtext">Chó</span>
+					  </a>
+					  <ul id="dogMenu" class="collapse list-unstyled">
+						<li><a href="./dog.html">Chó</a></li>
+						<li><a href="./fooddog.html">Thức ăn cho chó</a></li>
+					  </ul>
+					</li>
+				  </ul>
+				</div>
+			  </div>
+			  
 		<div class="mobile-menu-overlay"></div>
 
 		<div class="main-container">
 			<div class="xs-pd-20-10 pd-ltr-20">
 				<div class="title pb-20">
-					<h2 class="h3 mb-0">Hospital Overview</h2>
+					<h2 class="h3 mb-0">Benefit Overview</h2>
 				</div>
 
 				<div class="row pb-10">
@@ -536,9 +557,9 @@
 						<div class="card-box height-100-p widget-style3">
 							<div class="d-flex flex-wrap">
 								<div class="widget-data">
-									<div class="weight-700 font-24 text-dark">124,551</div>
+									<div class="weight-700 font-24 text-dark">12</div>
 									<div class="font-14 text-secondary weight-500">
-										Total Room
+										Dog and Cat
 									</div>
 								</div>
 								<div class="widget-icon">
@@ -555,7 +576,7 @@
 								<div class="widget-data">
 									<div class="weight-700 font-24 text-dark">400+</div>
 									<div class="font-14 text-secondary weight-500">
-										Total Restaurant
+										Total
 									</div>
 								</div>
 								<div class="widget-icon">
@@ -592,7 +613,7 @@
 							<div
 								class="d-flex flex-wrap justify-content-between align-items-center pb-0 pb-md-3"
 							>
-								<div class="h5 mb-md-0">Hospital Activities</div>
+								<div class="h5 mb-md-0">Benefit Activities</div>
 								<div class="form-group mb-md-0">
 									<select class="form-control form-control-sm selectpicker">
 										<option value="">Last Week</option>
@@ -921,9 +942,7 @@
 
 				
 		</div>
-		<button class="welcome-modal-btn">
-			<i class="fa fa-download"></i> Download
-		</button>
+	
 		<!-- welcome modal end -->
 		<!-- js -->
 		<script src="vendors/scripts/core.js"></script>

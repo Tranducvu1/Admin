@@ -3,7 +3,7 @@
 	<head>
 		<!-- Basic Page Info -->
 		<meta charset="utf-8" />
-		<title>LECAMÉLIA</title>
+		<title>DORA</title>
 
 		<!-- Site favicon -->
 		<link
@@ -108,7 +108,7 @@
 							<div class="login-title">
 								<h2 class="text-center text-primary">Login To DeskApp</h2>
 							</div>
-							<form>
+							<form id="loginForm">
 								<div class="select-role">
 									<div class="btn-group btn-group-toggle" data-toggle="buttons">
 										<label class="btn active">
@@ -141,6 +141,7 @@
 									<input
 										type="text"
 										class="form-control form-control-lg"
+										id="email"
 										placeholder="Username"
 									/>
 									<div class="input-group-append custom">
@@ -152,6 +153,7 @@
 								<div class="input-group custom">
 									<input
 										type="password"
+										id="password"
 										class="form-control form-control-lg"
 										placeholder="**********"
 									/>
@@ -187,11 +189,8 @@
 											use code for form submit
 											<input class="btn btn-primary btn-lg btn-block" type="submit" value="Sign In">
 										-->
-											<a
-												class="btn btn-primary btn-lg btn-block"
-												href="index.html"
-												>Sign In</a
-											>
+											
+											<button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
 										</div>
 										<div
 											class="font-16 weight-600 pt-10 pb-10 text-center"
@@ -209,6 +208,8 @@
 									</div>
 								</div>
 							</form>
+							<div id="message" class="message"></div>
+
 						</div>
 					</div>
 				</div>
@@ -293,6 +294,34 @@
 		<script src="vendors/scripts/script.min.js"></script>
 		<script src="vendors/scripts/process.js"></script>
 		<script src="vendors/scripts/layout-settings.js"></script>
+		<script >
+// Lắng nghe sự kiện "submit" từ form
+document.getElementById('loginForm').addEventListener('submit', function (event) {
+  event.preventDefault(); // Ngăn chặn form reload trang
+
+  // Lấy giá trị từ input
+  const email = document.getElementById('email').value.trim();
+  const password = document.getElementById('password').value.trim();
+
+  // Kiểm tra thông tin đăng nhập
+  if (email === 'admin@gmail.com' && password === '123') {
+    displayMessage('Login successful!', 'green');
+	window.location.href = 'index.html';
+    // Thực hiện điều hướng hoặc xử lý sau khi đăng nhập thành công
+  } else {
+    displayMessage('Invalid email or password!', 'red');
+  }
+});
+
+// Hàm hiển thị thông báo
+function displayMessage(message, color) {
+  const messageElement = document.getElementById('message');
+  messageElement.textContent = message;
+  messageElement.style.color = color;
+}
+
+			
+		</script>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript
 			><iframe
